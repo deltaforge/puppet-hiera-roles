@@ -1,0 +1,16 @@
+# role_webserver.yaml
+#
+# Every webserver includes apache class and firewall class
+role_webserver:
+  - apache
+  - firewall
+
+# For iptables within firewall class we add a new defined type (rule) for port 80
+iptables::rules:
+  'web_rule':
+    proto: tcp
+    dport: 80
+
+# Firewall class should consider iptables
+firewall:
+  - iptables: true

@@ -1,0 +1,4 @@
+# webserver farm configuration
+roles:
+  - role_default
+  - role_webserver

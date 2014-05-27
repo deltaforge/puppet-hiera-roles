@@ -1,0 +1,12 @@
+:backends:
+  - yaml
+:yaml:
+  :datadir: /etc/puppet/environments
+:hierarchy:
+  - %{environment}/hieradata/localized/%{::clientcert}
+  - %{environment}/hieradata/localized/%{deltaforge_roles}
+  - %{environment}/hieradata/localized/common
+  - %{environment}/hieradata/deltaforge/common
+  - %{environment}/hieradata/customer/%{::clientcert}
+  - %{environment}/hieradata/customer/%{deltaforge_roles}
+  - %{environment}/hieradata/customer/common

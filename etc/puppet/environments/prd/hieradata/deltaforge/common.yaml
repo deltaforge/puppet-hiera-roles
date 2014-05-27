@@ -1,0 +1,10 @@
+# Deltaforge common.yaml
+roles:
+  - role_default
+
+role_default:
+ - ntp
+
+ntp::servers:
+ - ntp1.example.org
+ - ntp2.example.org
