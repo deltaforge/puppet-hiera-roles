@@ -2,7 +2,7 @@
 
 There are a lot of approaches on abstraction layers towards puppet, often called roles or profiles. Most of these boil down to creating manifests (.pp-file) of *classes*. At Bitbrains we didn't think this was falling in line with our separation of configuration data (*parameters*) and code (*manifests*). We wanted all configuration data within **hiera** including things like *webserver* and forthcoming things like IP addresses and portnumbers.
 
-Jeroen and Tom drafted a working solution for the role-approach and presented this (including the so-called *meta-puppet-master* - or **MPM** for short - concept on the spring-conference of the [NLUUG](http://www.nluug.nl) which can be found at (todo: lookup PDF location) or the Dutch version of the talk captured in video [here](http://nluug.sigio.nl/05%20-%20Jeroen%20van%20Nieuwenhuizen%20-%20Tom%20Scholten%20--%20Multi-roled%20Puppetized%20Puppet%20Masters.webm "Video of talk").
+Jeroen and Tom drafted a working solution for the role-approach and presented this (including the so-called *meta-puppet-master* - or **MPM** for short - concept on the spring-conference of the [NLUUG](http://www.nluug.nl) which can be [found in the repository](https://github.com/deltaforge/puppet-hiera-roles/blob/master/docs/Bitbrains%20%26%20Snow%20-%20Mastering%20Puppetmasters%20%26%20Roles%20-%20NLUUG%20May%202014.pdf) as well or the Dutch version of the talk captured in video [here](http://nluug.sigio.nl/05%20-%20Jeroen%20van%20Nieuwenhuizen%20-%20Tom%20Scholten%20--%20Multi-roled%20Puppetized%20Puppet%20Masters.webm "Video of talk").
 
 ## Reasoning
 
@@ -49,7 +49,7 @@ Our approach has been
 + created december 2013 and taken into our MPM environment january 2014
 + discussed with a puppet trainer during education early 2014 via Bitbrains
 + discussed during puppetcamp berlin early 2014 via ASP4all
-+ presented at the forementioned NLUUG conference spring 2014
++ presented at the forementioned NLUUG conference spring 2014 [slidedeck](https://github.com/deltaforge/puppet-hiera-roles/blob/master/docs/Bitbrains%20%26%20Snow%20-%20Mastering%20Puppetmasters%20%26%20Roles%20-%20NLUUG%20May%202014.pdf)
 + added to [HI-257](https://tickets.puppetlabs.com/browse/HI-257) upon request by wvl
 + published (github) as of spring 2014
 
